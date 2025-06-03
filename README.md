@@ -1,11 +1,44 @@
-# Enhanced Genetic Algorithm Approach for Multi-Year Maintenance and Rehabilitation Optimization for Large-Scale Infrastructure Networks
+# Enhanced Genetic Algorithm for Multi-Year Maintenance and Rehabilitation Optimization in Large-Scale Infrastructure Networks
 
-This repository hosts the datasets, source code, and models associated with the research paper titled "Enhanced Genetic Algorithm Approach for Multi-Year Maintenance and Rehabilitation Optimization for Large-Scale Infrastructure Networks". This work tackles the significant and complex challenge of optimizing multi-year network maintenance and rehabilitation, a pivotal task in the management of infrastructure assets.
+This repository contains the datasets, source code, and experimental results accompanying the peer-reviewed journal article:
 
-Traditional genetic algorithms (GAs), while commonly used in this domain, tend to falter as the scale of the network expands, often disrupting viable solutions due to limitations in standard crossover and mutation techniques. In response to this issue, our study proposes an advanced GA framework that introduces innovative methods for maintaining the integrity of solution structures and enhancing solution search efficiency, thereby significantly improving performance even for large-scale networks.
+**Fard, A. K., & Yuan, X. X. (2024).** *Multiyear Maintenance and Rehabilitation Optimization for Large-Scale Infrastructure Networks: An Enhanced Genetic Algorithm Approach*.  
+*Journal of Infrastructure Systems*, 30(4), 04024028.  
+[https://doi.org/10.1061/JITSE4.ISENG-2489](https://doi.org/10.1061/JITSE4.ISENG-2489)
 
-By employing a novel crossover method that swaps blocks of genes representing annual plans, and a unique mutation approach integrating linear programming to adjust plans according to varying budget scenarios, our enhanced GA method effectively addresses the complexities of infrastructure optimization. The repository provides a comprehensive package for applying this enhanced approach to real-world infrastructure networks, aiming to facilitate more effective and efficient planning processes.
+---
 
-We demonstrate the effectiveness of our hybrid LP-GA approach through two practical case studies: one focusing on a small-scale sewer network flushing program, and the other on a larger scale involving 13,610 pavement segments. Results from these case studies indicate that our proposed algorithm not only achieves rapid convergence but also maintains a 100% rate of generating feasible solutions, reaching optimal or near-optimal outcomes efficiently.
+## Overview
 
-This work provides a sophisticated algorithmic tool for the field of infrastructure asset management, paving the way for further innovations in the sector.
+This research addresses the complex and computationally intensive problem of optimizing multi-year maintenance and rehabilitation (M&R) plans for large-scale infrastructure networks. The study introduces an **enhanced genetic algorithm (GA)** framework designed to overcome the limitations of conventional GA methods when applied to real-world networks with thousands of assets and strict budgetary constraints.
+
+Traditional GAs tend to degrade solution feasibility or performance as problem dimensionality increases, primarily due to the disruptive nature of standard crossover and mutation operators. Our enhanced GA integrates two key innovations:
+
+- **Structured crossover**: A block-based crossover operator that exchanges entire annual plans (gene blocks), preserving temporal and financial consistency across solutions.
+- **LP-guided mutation**: A linear programming (LP) module embedded in the mutation process to intelligently adjust asset-level decisions while ensuring budget adherence and feasibility.
+
+These enhancements result in superior convergence behavior, feasibility retention, and solution quality in large-scale scenarios.
+
+---
+
+## Case Studies
+
+We validated the proposed LP-GA framework on two infrastructure management problems:
+
+1. **Sewer flushing optimization** (small-scale): Demonstrates the method’s adaptability and feasibility preservation in constrained operational contexts.
+2. **Pavement rehabilitation planning** (large-scale): Involves 13,610 road segments and illustrates scalability, efficiency, and optimality under a multi-year capital planning scenario.
+
+In both cases, the algorithm consistently achieved 100% feasible solutions and demonstrated significant improvements in solution quality and computational performance.
+
+
+---
+
+## How to Cite
+
+If you use this code or dataset in your research, please cite the following article:
+
+> Fard, A. K., & Yuan, X. X. (2024).  
+> *Multiyear Maintenance and Rehabilitation Optimization for Large-Scale Infrastructure Networks: An Enhanced Genetic Algorithm Approach*.  
+> *Journal of Infrastructure Systems*, 30(4), 04024028.  
+> [https://doi.org/10.1061/JITSE4.ISENG-2489](https://doi.org/10.1061/JITSE4.ISENG-2489)
+
